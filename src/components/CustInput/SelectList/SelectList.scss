@@ -1,0 +1,26 @@
+.cust-input__container {
+    .select-list__container {
+        position: relative;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-size: 14px;
+        box-shadow: 4px 4px 12px 2px rgb(7 19 39 / 5%), 0 3px 3px -2px rgb(7 19 39 / 4%),
+            0 1px 2px -4px rgb(7 19 39 / 3%);
+        .select-list__list-item {
+            color: #666;
+            &:not(:first-child) {
+                padding-top: 5px;
+                margin-top: 3px;
+                border-top: 1px solid rgb(248, 248, 248);
+            }
+        }
+        .select-list__no-result {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+        }
+    }
+}

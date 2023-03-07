@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "outDir": "lib",
+        "noUnusedLocals": false,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "rootDir": ".",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "typeRoots": ["node_modules/@types", "global.d.ts"],
+        "paths": {
+            "@api/*": ["src/api/*"],
+            "@pages/*": ["src/pages/*"],
+            "@oldPages/*": ["src/oldPages/*"],
+            "@components/*": ["src/components/*"],
+            "@config/*": ["src/config/*"],
+            "@styles/*": ["src/styles/*"],
+            "@store/*": ["src/store/*"],
+            "@router/*": ["src/router/*"],
+            "@utils/*": ["src/utils/*"],
+            "@/*": ["src/*"]
+        }
+    },
+    "exclude": ["node_modules", "dist"],
+    "compileOnSave": false
+}

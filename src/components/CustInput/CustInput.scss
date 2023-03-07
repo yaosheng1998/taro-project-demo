@@ -1,0 +1,78 @@
+.cust-input__container {
+    background-color: #fff;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 43px;
+    min-height: 43px;
+    box-shadow: 4px 4px 12px 2px rgb(7 19 39 / 5%), 0 3px 3px -2px rgb(7 19 39 / 4%), 0 1px 2px -4px rgb(7 19 39 / 3%);
+    .cust-input__icon {
+        height: 20px;
+        width: 20px;
+        background: url('../../assets/image/search-icon.svg') no-repeat center center;
+        background-size: 100% 100%;
+        margin: 0 6px 0 12px;
+    }
+    .at-input {
+        margin: 0;
+        .at-input__input {
+            display: flex;
+            align-items: center;
+        }
+        .at-input--disabled {
+            opacity: 0.8;
+            input {
+                color: #000;
+            }
+        }
+    }
+    .cust-input__drawer {
+        position: fixed;
+        left: 0;
+        top: 0;
+        .at-drawer__content {
+            box-sizing: border-box;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            .cust-input__icon {
+                background: url('../../assets/svg/arrow-bottom.svg') no-repeat center center;
+                transform: rotateZ(90deg);
+                margin: 0 0 0 10px;
+            }
+            .cust-input__type-select{
+                overflow: hidden;
+                border-radius: 8px;
+                background-color: #fff;
+                margin-bottom: 10px;
+                .at-checkbox{
+                    display: flex;
+                    .at-checkbox__option{
+                        flex: 1;
+                        padding-left: 0;
+                        .at-checkbox__option-cnt{
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+            .cust-input__input-wrap {
+                background-color: #fff;
+                align-items: center;
+                border-radius: 8px;
+                overflow: hidden;
+                height: 43px;
+                min-height: 43px;
+                .weui-input {
+                    height: 100%;
+                }
+            }
+            .cust-input__select-list {
+                margin-top: 10px;
+                overflow: auto;
+            }
+        }
+    }
+}
